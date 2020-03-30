@@ -8,6 +8,12 @@ tags: [test]
 comments: true
 ---
 
+This post was one of the defaults that was included when I cloned this jekyll theme. I've opted to keep it now since it's a basic markdown reference that I can refer to easily..
+
+-Nick 
+
+
+
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
 **Here is some bold text**
