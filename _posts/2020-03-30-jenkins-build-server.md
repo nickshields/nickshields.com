@@ -146,11 +146,11 @@ Default output format [None]: json
 
 Now that the slave was configured, I needed to add it to jenkins so I could use it. From Jenkins, I went to Jenkins > Nodes > New Node and set the following:
 
-
+![slave_setup](http://nickshields.com/img/2020-03-30-jenkins-build-server/slave_setup.png){: .center-block :}
 
 For the Credentials, I added new Jenkins credentials with the following info:
 
-
+![slave_setup](http://nickshields.com/img/2020-03-30-jenkins-build-server/ec2_credentials.png){: .center-block :}
 
 At the completion of these steps, I was able to successfully launch the slave (There was actually a ton of debugging required at this point, but through trial and error, this post only demonstrates the final product... lucky you)
 
@@ -158,21 +158,21 @@ Note: I disabled the master node in jenkins so that builds wouldn't execute on t
 
 Creating the build is fairly straightforward, now that I have all the kinks worked out. In Jenkins, create a freestyle job. The below pics outline the build:
 
-
+![slave_setup](http://nickshields.com/img/2020-03-30-jenkins-build-server/source_management.png){: .center-block :}
 
 The source code management section is where you specify the location of the git repo. I used */master since I want to pull from this branch when changes get pushed.
 
-
+![slave_setup](http://nickshields.com/img/2020-03-30-jenkins-build-server/build_triggers.png){: .center-block :}
 
 Under build triggers, I enabled GitHub hook trigger for GITScm polling, since I want to setup a webhook from GitHub to notify jenkins of new changes.
 
+![slave_setup](http://nickshields.com/img/2020-03-30-jenkins-build-server/build_post_build.png){: .center-block :}
 
-
-Under the build steps, I needed to use `#!/bin/bash -l` because rvm needs a login shell, which is not how jenkins jobs execute (they use) Under post actions, I added a step to delete the workspace after the build completes, since we don not need any of it after it gets synced onto the S3 bucket.
+Under the build steps, I needed to use `#!/bin/bash -l` because rvm needs a login shell. Under post actions, I added a step to delete the workspace after the build completes, since we don not need any of it after it gets synced onto the S3 bucket.
 
 The last thing I had to do was add a webhook under my repo's settings:
 
-
+![slave_setup](http://nickshields.com/img/2020-03-30-jenkins-build-server/github_repo.png){: .center-block :}
 
 Once I saved this, I commited some changes to my repo, and it triggered the jenkins build. The build succesfully completed and my changes were reflected on my production website.
 
