@@ -9,17 +9,17 @@
 
 facebook:
   name: "Facebook"
-  urlTemplate: "https://www.facebook.com/{value}"
+  urlTemplate: "https://www.facebook.com/nick.5hields"
   icon: "fab fa-facebook"
 
 github:
   name: "GitHub"
-  urlTemplate: "https://github.com/{value}"
+  urlTemplate: "https://github.com/nickshields"
   icon: "fab fa-github"
 
 twitter:
   name: "Twitter"
-  urlTemplate: "https://twitter.com/{value}"
+  urlTemplate: "https://twitter.com/Nick__Shields"
   icon: "fab fa-twitter"
 
 reddit:
@@ -29,12 +29,12 @@ reddit:
 
 email:
   name: "Email me"
-  urlTemplate: "mailto:{value}"
+  urlTemplate: "mailto:nick.shields@live.com"
   icon: "fas fa-envelope"
 
 linkedin:
   name: "LinkedIn"
-  urlTemplate: "https://linkedin.com/in/{value}"
+  urlTemplate: "https://www.linkedin.com/in/nickshields1"
   icon: "fab fa-linkedin"
 
 xing:
