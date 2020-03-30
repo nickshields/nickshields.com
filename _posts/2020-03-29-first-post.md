@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First Post - How'd I get here?
+subtitle: Hosting your own jekyll blog on AWS
 image: /img/hello_world.jpeg
 ---
 
@@ -15,7 +16,6 @@ Instead of starting from scratch, I opted to use an existing theme to make my li
 Let's breakdown how I put everything together..
 
 ```
-​```
 $ sudo gem install bundler jekyll
 $ mdkir jekyll
 $ cd jekyll/
@@ -25,7 +25,6 @@ $ git clone https://github.com/nickshields/nickshields.com.git
 $ cd nickshields.com
 $ bundle install
 $ bundle exec jekyll serve
-​```
 ```
 
 Running the above commands is all it takes to get a local instance of a simple blog website running. If everything went as planned, you should see the result via: http://localhost:4000
