@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bringing up a Jenkins Server
-image: /img/hello_world.jpeg
+image: /img/2020-03-30-jenkins-build-server/jenkins.png
 ---
 
 Since I've opted leverage AWS to host this blog instead of github pages, I needed a more intuitive and simple way to push changes. Prior to this post, here's how how I push updates:
