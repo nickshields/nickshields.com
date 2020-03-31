@@ -104,10 +104,10 @@ url-pretty: "nickshields.com"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
- disqus: "nickshields"
+#disqus: "nickshields"
 
 # To use Facebook Comments, fill in a Facebook App ID
-# fb_comment_id: ""
+ fb_comment_id: "2818090064978390"
 
 # To use Staticman comments, fill in repository, branch, and endpoint
 staticman:
