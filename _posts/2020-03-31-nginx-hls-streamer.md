@@ -77,7 +77,7 @@ So now comes the fun part. Let's test it.
 
 As stated earlier, I need to stream some content to port 1935 in the container, which is mapped to port 32778 on my host machine. I downloaded [OBS](https://obsproject.com/download), since this is the most trivial way I could think to test it out. In OBS, I set the the stream settings as follows:
 
-![stream_settings](http://nickshields.com/img/img/2020-03-31-nginx-hls-streamer/stream-settings.png)
+![stream_settings](http://nickshields.com/img/2020-03-31-nginx-hls-streamer/stream-settings.png)
 
 Notes:
 
@@ -86,7 +86,7 @@ Notes:
 
 With OBS configured, it was as easy as starting the stream, and everything began working. Now in order for me to view the stream, all I had to do was navigate to http://127.0.0.1:32777/hls/test.m3u8 and voila:
 
-![me](http://nickshields.com/img/img/2020-03-31-nginx-hls-streamer/me.png){: .center-block :}
+![me](http://nickshields.com/img/2020-03-31-nginx-hls-streamer/me.png){: .center-block :}
 
 The latency is pretty noticable in the stream, but I imagine that there's some settings I can tweak to improve it.
 
