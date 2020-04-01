@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bringing up a Jenkins Server
+subtitle: For automated site deployments
 image: /img/2020-03-30-jenkins-build-server/jenkins.png
 ---
 
